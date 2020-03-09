@@ -1,0 +1,28 @@
+﻿@page "{restaurantId:int?}" 
+@model RestaurantApplication.Pages.Restaurant.EditModel
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Editing @Model.proRestaurant.resName  </h1>
+
+<form method="post">
+    <input type="hidden" asp-for="proRestaurant.resId " />
+    <div class="form-group">
+        <label >Name</label>
+        <input   asp-for="proRestaurant.resName " class="form-text  "></input>
+        <span asp-validation-for="proRestaurant.resName " class="text-danger "></span>
+    </div>
+    <div class="form-group">
+        <label >Location</label>
+        <input   asp-for="proRestaurant.resLocation " class="form-text "></input>
+        <span asp-validation-for="proRestaurant.resLocation " class="text-danger  "></span>
+    </div>
+    <div class="form-group">
+        <label>Cuisin Type</label>
+        <select class="form-control " asp-for="proRestaurant.CuisinType " asp-items="Model.cusines "></select>
+        <span asp-validation-for="proRestaurant.CuisinType  " class="text-danger  "></span>
+    </div>
+    <button type="submit" class="btn btn-primary ">Save</button>
+
+</form>

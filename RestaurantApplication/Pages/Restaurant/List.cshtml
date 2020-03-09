@@ -1,0 +1,52 @@
+﻿@page 
+
+@model RestaurantApplication.Pages.Restaurant.ListModel
+@{
+    ViewData["Title"] = "RestaurantList";
+}
+
+<h1>RestaurantList</h1>
+<head>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<form method="get">
+    
+    <div class="form-group ">
+        <div class="input-group ">
+            <input type="search" asp-for="SearchTerm " />
+            <button class="btn btn-primary">Search</button>
+
+
+        </div>
+    </div>
+</form>
+
+<table class="table">
+    @foreach (var res in Model.prorestaurants)
+    {
+        <tr>
+            <td>@res.resName  </td>
+            <td>@res.resLocation  </td>
+            <td>@res.CuisinType  </td>
+            <td>
+                <a class="btn btn-lg" asp-page="./Detail" asp-route-restaurantId="@res.resId">
+                    @*<i class="glyphicon glyphicon-zoom-in"></i>*@
+                    <button type="button" class="btn btn-default">Detail
+                        <span class="glyphicon glyphicon-zoom-in"></span>
+                    </button>
+                </a>
+
+                <a class="btn btn-lg" asp-page="./Edit" asp-route-restaurantId="@res.resId">
+                    @*<i class="glyphicon glyphicon-edit"></i>*@
+                    <button type="button" class="btn btn-default"> Edit
+                        <span class="glyphicon glyphicon-edit"></span>
+                    </button>
+
+                </a>
+            </td>
+        </tr>
+    }
+</table>
+
+<a  asp-page="./Edit" class="btn btn-primary">ADD NEW</a>
+

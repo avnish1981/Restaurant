@@ -1,0 +1,12 @@
+F:\Avnish\RestaurantApplication\RestaurantApp.data\bin\Debug\netcoreapp2.2\RestaurantApp.data.deps.json
+F:\Avnish\RestaurantApplication\RestaurantApp.data\bin\Debug\netcoreapp2.2\RestaurantApp.data.dll
+F:\Avnish\RestaurantApplication\RestaurantApp.data\bin\Debug\netcoreapp2.2\RestaurantApp.data.pdb
+F:\Avnish\RestaurantApplication\RestaurantApp.data\bin\Debug\netcoreapp2.2\RestaurantApp.core.dll
+F:\Avnish\RestaurantApplication\RestaurantApp.data\bin\Debug\netcoreapp2.2\RestaurantApp.core.pdb
+F:\Avnish\RestaurantApplication\RestaurantApp.data\obj\Debug\netcoreapp2.2\RestaurantApp.data.csprojAssemblyReference.cache
+F:\Avnish\RestaurantApplication\RestaurantApp.data\obj\Debug\netcoreapp2.2\RestaurantApp.data.csproj.CoreCompileInputs.cache
+F:\Avnish\RestaurantApplication\RestaurantApp.data\obj\Debug\netcoreapp2.2\RestaurantApp.data.AssemblyInfoInputs.cache
+F:\Avnish\RestaurantApplication\RestaurantApp.data\obj\Debug\netcoreapp2.2\RestaurantApp.data.AssemblyInfo.cs
+F:\Avnish\RestaurantApplication\RestaurantApp.data\obj\Debug\netcoreapp2.2\RestaurantApp.data.csproj.CopyComplete
+F:\Avnish\RestaurantApplication\RestaurantApp.data\obj\Debug\netcoreapp2.2\RestaurantApp.data.dll
+F:\Avnish\RestaurantApplication\RestaurantApp.data\obj\Debug\netcoreapp2.2\RestaurantApp.data.pdb
