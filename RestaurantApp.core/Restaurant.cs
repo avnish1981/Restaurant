@@ -7,6 +7,7 @@ namespace RestaurantApp.core
 {
     public class Restaurant
     {
+        [Key]
         public int resId { get; set; }
         [Required]
         [StringLength(80)]
