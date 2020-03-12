@@ -21,7 +21,7 @@
     </div>
 </form>
 
-<table class="table">
+@*<table class="table">
     @foreach (var res in Model.prorestaurants)
     {
         <tr>
@@ -30,15 +30,26 @@
             <td>@res.CuisinType  </td>
             <td>
                 <a class="btn btn-lg" asp-page="./Detail" asp-route-restaurantId="@res.resId">
-                    @*<i class="glyphicon glyphicon-zoom-in"></i>*@
-                    <button type="button" class="btn btn-default">Detail
+                    
+                    <button type="button" class="btn btn-default">
+                        Detail
                         <span class="glyphicon glyphicon-zoom-in"></span>
                     </button>
                 </a>
 
                 <a class="btn btn-lg" asp-page="./Edit" asp-route-restaurantId="@res.resId">
-                    @*<i class="glyphicon glyphicon-edit"></i>*@
-                    <button type="button" class="btn btn-default"> Edit
+                    
+                    <button type="button" class="btn btn-default">
+                        Edit
+                        <span class="glyphicon glyphicon-edit"></span>
+                    </button>
+
+                </a>
+
+                <a class="btn btn-lg" asp-page="./Delete" asp-route-restaurantId="@res.resId">
+                    
+                    <button type="button" class="btn btn-default">
+                        Delete
                         <span class="glyphicon glyphicon-edit"></span>
                     </button>
 
@@ -46,7 +57,16 @@
             </td>
         </tr>
     }
-</table>
+</table>*@
+@foreach (var restaurant in Model.prorestaurants )
+{
+    <partial name="_SummaryPartialView" model="restaurant " />
+}
 
 <a  asp-page="./Edit" class="btn btn-primary">ADD NEW</a>
+
+@section footer
+{
+    <div> This is Avnish Copyright</div>
+}
 

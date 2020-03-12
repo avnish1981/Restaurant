@@ -10,16 +10,19 @@
     Id : @Model.restaurant.resId
 </div>
 <div>
-    Location : @Model.restaurant.resLocation   
+    Location : @Model.restaurant.resLocation
 </div>
 <div>
-    Cuisin : @Model.restaurant.CuisinType  
+    Cuisin : @Model.restaurant.CuisinType
 </div>
 
-@if(Model.disMessage !=null)
+@if (Model.disMessage != null)
 {
     <div class="alert alert-info "> @Model.disMessage  </div>
 }
 
 <a asp-page="./List" class=" btn btn-primary"> All Restaurent </a>
-
+@section footer
+    {
+    <div> This is Avnish Copyright</div>
+}

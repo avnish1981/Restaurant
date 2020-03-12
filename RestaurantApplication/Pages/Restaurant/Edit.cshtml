@@ -1,4 +1,4 @@
-﻿@page "{restaurantId:int?}" 
+﻿@page "{restaurantId:int?}"
 @model RestaurantApplication.Pages.Restaurant.EditModel
 @{
     ViewData["Title"] = "Edit";
@@ -9,13 +9,13 @@
 <form method="post">
     <input type="hidden" asp-for="proRestaurant.resId " />
     <div class="form-group">
-        <label >Name</label>
-        <input   asp-for="proRestaurant.resName " class="form-text  "></input>
+        <label>Name</label>
+        <input asp-for="proRestaurant.resName " class="form-text  "></input>
         <span asp-validation-for="proRestaurant.resName " class="text-danger "></span>
     </div>
     <div class="form-group">
-        <label >Location</label>
-        <input   asp-for="proRestaurant.resLocation " class="form-text "></input>
+        <label>Location</label>
+        <input asp-for="proRestaurant.resLocation " class="form-text "></input>
         <span asp-validation-for="proRestaurant.resLocation " class="text-danger  "></span>
     </div>
     <div class="form-group">
@@ -26,3 +26,7 @@
     <button type="submit" class="btn btn-primary ">Save</button>
 
 </form>
+@section footer
+    {
+    <div> This is Avnish Copyright</div>
+}
