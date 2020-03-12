@@ -1,0 +1,41 @@
+﻿@using RestaurantApp.core
+@model Restaurant
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3>@Model.resName  </h3>
+
+        </div>
+    <div class="panel-body">
+        <span> Location: @Model.resLocation  </span>
+        <span> Cuisine :@Model.CuisinType  </span>
+
+    </div>
+
+    <div class="panel-footer">
+        <a class="btn btn-lg" asp-page="./Detail" asp-route-restaurantId="@Model .resId">
+            @*<i class="glyphicon glyphicon-zoom-in"></i>*@
+            <button type="button" class="btn btn-default">
+                Detail
+                <span class="glyphicon glyphicon-zoom-in"></span>
+            </button>
+        </a>
+
+        <a class="btn btn-lg" asp-page="./Edit" asp-route-restaurantId="@Model .resId">
+            @*<i class="glyphicon glyphicon-edit"></i>*@
+            <button type="button" class="btn btn-default">
+                Edit
+                <span class="glyphicon glyphicon-edit"></span>
+            </button>
+
+        </a>
+
+        <a class="btn btn-lg" asp-page="./Delete" asp-route-restaurantId="@Model.resId">
+            @*<i class="glyphicon glyphicon-edit"></i>*@
+            <button type="button" class="btn btn-default">
+                Delete
+                <span class="glyphicon glyphicon-edit"></span>
+            </button>
+            </a>
+    </div>
+        </div>

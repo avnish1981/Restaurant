@@ -13,5 +13,7 @@ namespace RestaurantApp.data
 
         }
         public DbSet<Restaurant> Restaurants { get; set; }
+
+
     }
 }
