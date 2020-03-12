@@ -1,9 +1,9 @@
 F:\Avnish\RestaurantApplication\RestaurantApp.core\bin\Debug\netcoreapp2.2\RestaurantApp.core.deps.json
 F:\Avnish\RestaurantApplication\RestaurantApp.core\bin\Debug\netcoreapp2.2\RestaurantApp.core.dll
 F:\Avnish\RestaurantApplication\RestaurantApp.core\bin\Debug\netcoreapp2.2\RestaurantApp.core.pdb
+F:\Avnish\RestaurantApplication\RestaurantApp.core\obj\Debug\netcoreapp2.2\RestaurantApp.core.csprojAssemblyReference.cache
 F:\Avnish\RestaurantApplication\RestaurantApp.core\obj\Debug\netcoreapp2.2\RestaurantApp.core.csproj.CoreCompileInputs.cache
 F:\Avnish\RestaurantApplication\RestaurantApp.core\obj\Debug\netcoreapp2.2\RestaurantApp.core.AssemblyInfoInputs.cache
 F:\Avnish\RestaurantApplication\RestaurantApp.core\obj\Debug\netcoreapp2.2\RestaurantApp.core.AssemblyInfo.cs
 F:\Avnish\RestaurantApplication\RestaurantApp.core\obj\Debug\netcoreapp2.2\RestaurantApp.core.dll
 F:\Avnish\RestaurantApplication\RestaurantApp.core\obj\Debug\netcoreapp2.2\RestaurantApp.core.pdb
-F:\Avnish\RestaurantApplication\RestaurantApp.core\obj\Debug\netcoreapp2.2\RestaurantApp.core.csprojAssemblyReference.cache

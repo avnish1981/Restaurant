@@ -10,3 +10,5 @@ F:\Avnish\RestaurantApplication\RestaurantApp.data\obj\Debug\netcoreapp2.2\Resta
 F:\Avnish\RestaurantApplication\RestaurantApp.data\obj\Debug\netcoreapp2.2\RestaurantApp.data.csproj.CopyComplete
 F:\Avnish\RestaurantApplication\RestaurantApp.data\obj\Debug\netcoreapp2.2\RestaurantApp.data.dll
 F:\Avnish\RestaurantApplication\RestaurantApp.data\obj\Debug\netcoreapp2.2\RestaurantApp.data.pdb
+F:\Avnish\RestaurantApplication\RestaurantApp.data\bin\Debug\netcoreapp2.2\RestaurantApp.data.runtimeconfig.json
+F:\Avnish\RestaurantApplication\RestaurantApp.data\bin\Debug\netcoreapp2.2\RestaurantApp.data.runtimeconfig.dev.json

@@ -36,3 +36,5 @@ F:\Avnish\RestaurantApplication\RestaurantApplication\obj\Debug\netcoreapp2.2\Re
 F:\Avnish\RestaurantApplication\RestaurantApplication\obj\Debug\netcoreapp2.2\RestaurantApplication.csproj.CopyComplete
 F:\Avnish\RestaurantApplication\RestaurantApplication\obj\Debug\netcoreapp2.2\RestaurantApplication.dll
 F:\Avnish\RestaurantApplication\RestaurantApplication\obj\Debug\netcoreapp2.2\RestaurantApplication.pdb
+F:\Avnish\RestaurantApplication\RestaurantApplication\obj\Debug\netcoreapp2.2\Razor\Pages\Restaurant\Delete.g.cshtml.cs
+F:\Avnish\RestaurantApplication\RestaurantApplication\obj\Debug\netcoreapp2.2\Razor\Pages\Restaurant\_SummaryPartialView.g.cshtml.cs
