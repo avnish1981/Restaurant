@@ -31,7 +31,8 @@ namespace RestaurantApplication
                options.UseSqlServer(Configuration.GetConnectionString("RestaurantDB"));
 
            });
-            services.AddSingleton<IRestaurantData, clsRestaurantData>();
+            //services.AddSingleton<IRestaurantData, clsRestaurantData>();
+            services.AddScoped<IRestaurantData, SqlRestaurantData>();
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
