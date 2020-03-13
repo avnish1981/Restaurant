@@ -12,6 +12,8 @@ namespace RestaurantApp.data
         Restaurant Updated(Restaurant updatedRestaurant);
         Restaurant Add(Restaurant newRestaurant);
         Restaurant Delete(int id);
+
+        int GetTotalRestaurantCount();
         int commit();
     }
 }

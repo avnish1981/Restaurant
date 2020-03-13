@@ -61,6 +61,11 @@ namespace RestaurantApp.data
             return objRes.SingleOrDefault(r => r.resId == id);
         }
 
+        public int GetTotalRestaurantCount()
+        {
+            return objRes.Count();
+        }
+
         public Restaurant Updated(Restaurant updatedRestaurant)
         {
             var resdata = objRes.SingleOrDefault(r => r.resId == updatedRestaurant.resId);

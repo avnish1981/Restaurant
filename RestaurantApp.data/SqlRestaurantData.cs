@@ -51,6 +51,11 @@ namespace RestaurantApp.data
             return db.Restaurants.Find(id);
         }
 
+        public int GetTotalRestaurantCount()
+        {
+            return db.Restaurants.Count();
+        }
+
         public Restaurant Updated(Restaurant updatedRestaurant)
         {
             var entity = db.Restaurants.Attach(updatedRestaurant);
@@ -59,5 +64,7 @@ namespace RestaurantApp.data
 
             return updatedRestaurant;
         }
+
+        
     }
 }

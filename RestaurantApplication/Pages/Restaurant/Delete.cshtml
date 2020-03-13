@@ -1,6 +1,8 @@
 ﻿@page "{restaurantId}"
 @model RestaurantApplication.Pages.Restaurant.DeleteModel
 @{
+
+    Layout = "_Layout";
     ViewData["Title"] = "Delete";
 }
 
@@ -8,12 +10,10 @@
 
     <h2> Delete !</h2>
     <div class="alert alert-danger ">
-
     Are you sure you want to delete @Model.restaurant.resName  ?
-    
-    </div>
-    <form method="post" >
-  <button class="btn btn-danger " type="submit" >Yes!</button>
+     </div>
+    <form method="post"  >
+  <button class="btn btn-danger " type="submit" >Yes</button>
    <a asp-page="List" class="btn btn-default">Cancel</a>
 </form>
 
