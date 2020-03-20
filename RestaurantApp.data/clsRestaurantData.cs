@@ -12,14 +12,14 @@ namespace RestaurantApp.data
         {
             objRes = new List<Restaurant>
             {
-                new Restaurant{resId=1,resName="Ïndia Dhaba" , resLocation="Noida",CuisinType=CuisinType.Indian },
-                new Restaurant{resId=2,resName="Punjabi Dhaba" , resLocation="Delhi",CuisinType=CuisinType.Indian },
-                new Restaurant{resId=3,resName="Maxican Curry" , resLocation="Noida",CuisinType=CuisinType.Maxican  },
-                new Restaurant{resId=4,resName="maxican Golf Curry" , resLocation="Noida",CuisinType=CuisinType.Maxican },
-                new Restaurant{resId=5,resName="Suji Italina" , resLocation="Noida",CuisinType=CuisinType.Italian  },
-                new Restaurant{resId=6,resName="GS Italian" , resLocation="Noida",CuisinType=CuisinType.Italian },
-                new Restaurant{resId=7,resName="Holf Maxican" , resLocation="Noida",CuisinType=CuisinType.Maxican },
-                new Restaurant{resId=8,resName="Gujarati Dhaba" , resLocation="Noida",CuisinType=CuisinType.Indian },
+                new Restaurant{resId=1,resName="Ïndia Dhaba" , resLocation="Noida",cuisinType=CuisinType.Indian },
+                new Restaurant{resId=2,resName="Punjabi Dhaba" , resLocation="Delhi",cuisinType=CuisinType.Indian },
+                new Restaurant{resId=3,resName="Maxican Curry" , resLocation="Noida",cuisinType=CuisinType.Maxican  },
+                new Restaurant{resId=4,resName="maxican Golf Curry" , resLocation="Noida",cuisinType=CuisinType.Maxican },
+                new Restaurant{resId=5,resName="Suji Italina" , resLocation="Noida",cuisinType=CuisinType.Italian  },
+                new Restaurant{resId=6,resName="GS Italian" , resLocation="Noida",cuisinType=CuisinType.Italian },
+                new Restaurant{resId=7,resName="Holf Maxican" , resLocation="Noida",cuisinType=CuisinType.Maxican },
+                new Restaurant{resId=8,resName="Gujarati Dhaba" , resLocation="Noida",cuisinType=CuisinType.Indian },
 
 
             };
@@ -73,7 +73,7 @@ namespace RestaurantApp.data
             {
                 resdata.resName = updatedRestaurant.resName;
                 resdata.resLocation = updatedRestaurant.resLocation;
-                resdata.CuisinType = updatedRestaurant.CuisinType;
+                resdata.cuisinType = updatedRestaurant.cuisinType;
 
             }
 

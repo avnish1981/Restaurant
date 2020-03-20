@@ -6,39 +6,53 @@
 
 
 <h1>ClientRestaurant</h1>
-<table class="table" id="tblRestaurant"></table>
+<table class="table " id="tblRestaurant"></table>
 
 @section Scripts{
 
 <environment include="Development">
-    <script src="~/datatables/js/dataTables.bootstrap.min.js"></script>
-    <script src="~/datatables/js/jquery.dataTables.min.js"></script>
-    <link href="~/datatables/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <script src="~/node_modules/datatables.net/js/jquery.dataTables.js"></script>
+    <script src="~/node_modules/datatables.net-bs/js/dataTables.bootstrap.js"></script>
+    <link href="~/node_modules/datatables.net-bs/css/dataTables.bootstrap.css" rel="stylesheet" />
 </environment>
-<environment exclude="Development">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap.min.css" />
-    <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap.min.js"></script>
-</environment>
-    
+   
+
+    <environment exclude="Development">
+        <script src="~/datatables/js/dataTables.bootstrap.min.js"></script>
+        <script src="~/datatables/js/jquery.dataTables.min.js"></script>
+        <link href="~/datatables/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap.min.css" />
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap.min.js"></script>
+    </environment>
+
 
 
     <script>
         $(function () {
+            var cuisines = ["Unknown","Maxian","Indian","Italian"]
+
             $.ajax("/api/restaurants/", { method: "get" })
                 .then(function (response) {
-                    $("#tblRestaurant").dataTable({
+                    $('#tblRestaurant').dataTable({
                         data: response,
                         columns: [
                             { "data": "resName" },
-                            { "data": "resLocation" }
-                            
+                            { "data": "resLocation" },
+                            {
+                                "data": "cuisinType", "render": function (data) {
+                                    return cuisines[data];
+
+                                }
+                            }
+
                         ]
 
 
                     });
-
-                });
+                });                    
         });
     </script>
 

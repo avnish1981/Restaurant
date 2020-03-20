@@ -31,7 +31,7 @@ namespace RestaurantApplication
                options.UseSqlServer(Configuration.GetConnectionString("RestaurantDB"));
 
            });
-            //services.AddSingleton<IRestaurantData, clsRestaurantData>();
+          //services.AddSingleton<IRestaurantData, clsRestaurantData>();
             services.AddScoped<IRestaurantData, SqlRestaurantData>();
             services.Configure<CookiePolicyOptions>(options =>
             {
@@ -60,9 +60,9 @@ namespace RestaurantApplication
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseNodeModules(env);
             app.UseCookiePolicy();
-
-            app.UseMvc();
+             app.UseMvc();
         }
     }
 }

@@ -14,7 +14,7 @@ namespace RestaurantApp.core
         public string resName { get; set; }
         [Required,StringLength(255)]
         public string resLocation { get; set; }
-        public CuisinType CuisinType { get; set; }
+        public CuisinType cuisinType { get; set; }
 
     }
 }
