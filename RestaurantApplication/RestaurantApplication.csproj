@@ -5,16 +5,27 @@
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
     <UserSecretsId>63aed250-cfb2-4558-8281-7c280a0cf6ec</UserSecretsId>
   </PropertyGroup>
+  
+  <Target Name="PostBuild" AfterTargets="ComputeFilesToPublish">
+    <Exec Command="npm install" />
+  </Target>
+
+  <ItemGroup>
+    <Content Include="node_module/**" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
 
   <ItemGroup>
     <None Remove="Pages\Restaurant\y1apbwfl.zgt~" />
   </ItemGroup>
 
 
+
+
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+    <PackageReference Include="OdeToCode.UseNodeModules" Version="1.0.6" />
   </ItemGroup>
 
 

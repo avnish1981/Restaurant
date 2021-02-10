@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -31,6 +32,7 @@ namespace RestaurantApplication
                options.UseSqlServer(Configuration.GetConnectionString("RestaurantDB"));
 
            });
+            services.AddDefaultIdentity<IdentityUser>().AddEntityFrameworkStores<RestaurantDbContext>();
           //services.AddSingleton<IRestaurantData, clsRestaurantData>();
             services.AddScoped<IRestaurantData, SqlRestaurantData>();
             services.Configure<CookiePolicyOptions>(options =>
@@ -62,6 +64,7 @@ namespace RestaurantApplication
             app.UseStaticFiles();
             app.UseNodeModules(env);
             app.UseCookiePolicy();
+            app.UseAuthentication();
              app.UseMvc();
         }
     }

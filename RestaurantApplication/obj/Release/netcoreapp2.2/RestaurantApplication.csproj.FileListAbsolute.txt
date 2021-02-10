@@ -38,3 +38,5 @@ F:\Avnish\RestaurantApplication\RestaurantApplication\obj\Release\netcoreapp2.2\
 F:\Avnish\RestaurantApplication\RestaurantApplication\obj\Release\netcoreapp2.2\Razor\Pages\Restaurant\Edit.g.cshtml.cs
 F:\Avnish\RestaurantApplication\RestaurantApplication\obj\Release\netcoreapp2.2\Razor\Pages\Restaurant\NotFound.g.cshtml.cs
 F:\Avnish\RestaurantApplication\RestaurantApplication\obj\Release\netcoreapp2.2\Razor\Pages\Restaurant\_SummaryPartialView.g.cshtml.cs
+F:\Avnish\RestaurantApplication\RestaurantApplication\obj\Release\netcoreapp2.2\Razor\Pages\Shared\Components\RestaurantCount\Default.g.cshtml.cs
+F:\Avnish\RestaurantApplication\RestaurantApplication\obj\Release\netcoreapp2.2\Razor\Pages\Restaurant\ClientRestaurant.g.cshtml.cs
